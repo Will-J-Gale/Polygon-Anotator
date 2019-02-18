@@ -1,6 +1,8 @@
 # IN PROGRESS
 
 # Polygon-Anotator
+![alt text](https://github.com/Will-J-Gale/Polygon-Anotator/blob/master/Wiki%20Images/Draw%20Polygon.png)
+![alt text](https://github.com/Will-J-Gale/Polygon-Anotator/blob/master/Wiki%20Images/Workflow.png)
 
 ## Installing 
 Download binaries for windows here: ADD LINK
