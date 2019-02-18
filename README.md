@@ -2,6 +2,8 @@
 ![alt text](https://github.com/Will-J-Gale/Polygon-Anotator/blob/master/Wiki%20Images/Draw%20Polygon.png)
 ![alt text](https://github.com/Will-J-Gale/Polygon-Anotator/blob/master/Wiki%20Images/Workflow.png)
 
+Inspired by https://github.com/tzutalin/labelImg
+
 ## Installing 
 Download binaries for windows here: ADD LINK
 
