@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMessageBox, QColorDialog, QWidget
+from PyQt5.QtWidgets import QMessageBox, QColorDialog, QWidget,  QMenu
 from PyQt5.QtGui import QIcon, QPixmap, QPainter, QColor, QStandardItem
 from PyQt5.QtCore import QPoint, QPointF, Qt
 from libs.PolygonControls import Control, Polygon
