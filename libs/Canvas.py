@@ -351,7 +351,8 @@ class Canvas(QWidget):
             deleteControlAction.setDisabled(True)
         elif(self.selectedPolygon is None):
             changeColorAciton.setDisabled(True)
-        elif(type(self.highlightedControl) is Polygon):
+
+        if(type(self.highlightedControl) is Polygon):
             deleteControlAction.setDisabled(True)
         elif(type(self.highlightedControl) is Control):
             deletePolygonAction.setDisabled(True)
@@ -369,6 +370,8 @@ class Canvas(QWidget):
             self.deleteControl()
         elif(selectedAction == deletePolygonAction):
             self.deletePolygon()
+        elif(selectedAction == None):
+            self.highlightedControl = None
 
         self.update()
 

@@ -248,3 +248,4 @@ if(os.path.exists(COLOR_CLASSES_FILENAME)):
 
 OFFSCREEN = 100000
 SCROLL_SCALE = 2
+HELP_PAGE_WEBSITE = "https://github.com/Will-J-Gale/Polygon-Anotator/wiki"

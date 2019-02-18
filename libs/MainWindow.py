@@ -12,6 +12,7 @@ from libs.Constants import *
 import math
 import os
 from libs.FolderLoader import FolderLoader
+import webbrowser
 
 class Window(QMainWindow):
     
@@ -313,7 +314,7 @@ class Window(QMainWindow):
         self.canvas.setColor(color)
 
     def howToUse(self):
-        print("LINK TO WEBSITE")
+        webbrowser.open(HELP_PAGE_WEBSITE)
 
     def copy(self):
         self.canvas.copyPolygon()
