@@ -24,5 +24,5 @@ The source was built with python 3.6 and PyQt5 with the biinary file being creat
 | A             | Previous Image|
 | Mouse Wheel   | Zoom +/-      |
 | Mouse Wheel drag |Scroll around |
-| 1-9           | Change color|
+| 0-9           | Change color|
 
