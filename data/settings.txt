@@ -1,0 +1,8 @@
+[Color Classes]
+Green:#00FF00
+Red:#FF0000
+Blue:#0000FF
+Yellow:#FFFF00
+Purple:#FF00FF
+Light Blue:#00FFFF
+Orange:#FFA500
