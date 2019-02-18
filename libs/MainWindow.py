@@ -1,7 +1,11 @@
 import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QMainWindow, QScrollArea, QToolBar, QLabel, \
+QStatusBar, QCheckBox, QComboBox, QListWidgetItem, QAction, QVBoxLayout, \
+QVBoxLayout, QFileDialog, QMessageBox, QDockWidget
+
+from PyQt5.QtGui import QIcon, QColor
+
+from PyQt5.QtCore import QSignalMapper, QPoint
 from libs.Canvas import *
 from libs.Constants import *
 import math
