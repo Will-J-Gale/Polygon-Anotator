@@ -1,7 +1,6 @@
 import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5.QtGui import QColor, QPolygonF
+from PyQt5.QtCore import QPoint, QRect
 from libs.Constants import *
 from libs.Utils import *
 import math

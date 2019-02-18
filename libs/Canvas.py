@@ -1,6 +1,6 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QMessageBox, QColorDialog, QWidget
+from PyQt5.QtGui import QIcon, QPixmap, QPainter, QColor, QStandardItem
+from PyQt5.QtCore import QPoint, QPointF, Qt
 from libs.PolygonControls import Control, Polygon
 from libs.Constants import *
 from libs.Utils import *
@@ -117,7 +117,6 @@ class Canvas(QWidget):
         self.painter.drawPixmap(0, 0, self.pixmap)
 
     def drawPolygons(self):
-        print(self.freeDrawPolygon)
         for poly in self.polygons:
             self.painter.setOpacity(CONTROL_OPACITY)
             
@@ -564,23 +563,24 @@ class Canvas(QWidget):
         self.update()
 
     def saveImage(self):
-        image = np.zeros((self.pixmap.height(),self.pixmap.width(), 3), dtype=np.uint8)
-        polygons = []
-        for polygon in self.polygons:
-            polyToDraw = np.array(polygon.toList())
-            color = polygon.colorToCV()
+        if(not self.pixmap.isNull()):
+            image = np.zeros((self.pixmap.height(),self.pixmap.width(), 3), dtype=np.uint8)
+            polygons = []
+            for polygon in self.polygons:
+                polyToDraw = np.array(polygon.toList())
+                color = polygon.colorToCV()
 
-            image = cv2.fillPoly(image, [polyToDraw], color)
+                image = cv2.fillPoly(image, [polyToDraw], color)
 
-            polyObj = {'color': color, 'controls': polyToDraw}
-            polygons.append(polyObj)
+                polyObj = {'color': color, 'controls': polyToDraw}
+                polygons.append(polyObj)
 
-        #Deals with openCV using BGR instead of RGB
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        cv2.imwrite(f"{self.filenamePrefix}{SEGMENTATION_SUFFIX}", image)
+            #Deals with openCV using BGR instead of RGB
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            cv2.imwrite(f"{self.filenamePrefix}{SEGMENTATION_SUFFIX}", image)
 
-        with open(f"{self.filenamePrefix}{POLYGON_SUFFIX}", 'wb+') as polyPickle:
-            pickle.dump(polygons, polyPickle)
+            with open(f"{self.filenamePrefix}{POLYGON_SUFFIX}", 'wb+') as polyPickle:
+                pickle.dump(polygons, polyPickle)
 
     def setState(self, state):
         self.state = state

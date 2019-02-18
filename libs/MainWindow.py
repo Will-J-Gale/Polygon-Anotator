@@ -1,7 +1,8 @@
 import sys
+
 from PyQt5.QtWidgets import QMainWindow, QScrollArea, QToolBar, QLabel, \
 QStatusBar, QCheckBox, QComboBox, QListWidgetItem, QAction, QVBoxLayout, \
-QVBoxLayout, QFileDialog, QMessageBox, QDockWidget
+QVBoxLayout, QFileDialog, QMessageBox, QDockWidget, QListWidget
 
 from PyQt5.QtGui import QIcon, QColor
 
