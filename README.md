@@ -9,7 +9,10 @@ Download binaries for windows here: ADD LINK
 To learn how to use this annotating tool please visit the wiki: https://github.com/Will-J-Gale/Polygon-Anotator/wiki
 
 ## Source requirments
-The source was built with python 3.6 and PyQt5 with the biinary file being created with Pyinstaller 
+* Python 3.6
+* PyQt5
+* Numpy
+* OpenCV
 
 ## Shortcuts
 
