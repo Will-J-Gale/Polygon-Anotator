@@ -5,7 +5,9 @@
 Inspired by https://github.com/tzutalin/labelImg
 
 ## Installing 
-Download binaries for windows here: ADD LINK
+1. Download Polygon-Annotator-V1-Windows-x64.zip: here: https://github.com/Will-J-Gale/Polygon-Anotator/releases/tag/v1.0
+2. Extract
+3. Run PolygonAnnotator.exe
 
 ## Usage
 To learn how to use this annotating tool please visit the wiki: https://github.com/Will-J-Gale/Polygon-Anotator/wiki
