@@ -1,10 +1,12 @@
+# IN PROGRESS
+
 # Polygon-Anotator
 
 ## Installing 
 Download binaries for windows here: ADD LINK
 
 ## Usage
-To learn how to use this annotating tool please visit the wiki: ADD LINK
+To learn how to use this annotating tool please visit the wiki: https://github.com/Will-J-Gale/Polygon-Anotator/wiki
 
 ## Source requirments
 The source was built with python 3.6 and PyQt5 with the biinary file being created with Pyinstaller 
@@ -22,5 +24,5 @@ The source was built with python 3.6 and PyQt5 with the biinary file being creat
 | A             | Previous Image|
 | Mouse Wheel   | Zoom +/-      |
 | Mouse Wheel drag |Scroll around |
-| 1-9           | Change color|
+| 0-9           | Change color|
 
